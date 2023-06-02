@@ -1,118 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JohnL</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--CSS FONTS FROM GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Geologica:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Johnl Web</title>
 </head>
 <body>
-  <div id="animation" class="containerAnim"></div>
-  <div id="top" class="wala">top</div>
-  
-  <div class="distance" id="tp">
-   
-    <header class="head">
-      <button onclick="myFunction()" class="btn"> 
-      <ul onclick="active()" class="menu">
-        <li class="burger"></li>
-        <li class="burger"></li>
-        <li class="burger"></li>
-      </ul>
-      </button>
-      <h1 class="logo"><span>My</span>Portfolio</h1>
-     <button id="theme" class="swbtn">Switch Theme
-     </button>
+    
+    <div id="Home" class="Main-Body">
+
+        <div class="Card">
+            <h1>Hi i'm <span>JohnL</span></h1>
+            <img class="Me" src="Me.jpg" alt="">
+            <h4>a student Web developer</h4>
+        </div>
+
+        <div class="Greetings">
+
+            <h1 class="Hover-Effect1">Hello everyone!</h1>
+            <br>
+            <p>Welcome to my webpage. Have fun looking around.</p>
+            <a href="#AboutMe"><button>Start Exploring</button></a>
+
+        </div>
+        
+
+    </div>
+
+    <header id="myHeader" class="Header">
+
+        <div class="Burger-Menu">
+            <ul onclick="ShowMenu()">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+       <div class="Logo">
+        <img src="Logo.png" alt="">
+        <h1><span>J</span>ohnL</h1>
+       </div>
+
+        <div class="Menu-Button">
+            <ul id="Menu-Button">
+                <i onclick="UnshowMenu()" class="fa-solid fa-xmark"></i>
+                <li><a href="#Home"><h3>Home</h3></a></li>
+                <li><a href="#AboutMe"><h3>About Me</h3></a></li>
+                <li><a href="#ContactMe"><h3>Contact Me</h3></a></li>
+            </ul>
+        </div>
+
+        <button class="ST-btn">Switch Theme</button>
+
     </header>
+
     
-      <nav id="navbar" class="navbar">
-          <a href="#about" class="btns btn1">About Me</a>
-          <a href="#" class="btns btn1">Contact Me</a>
-          <a href="#project" class="btns btn1">My Projects</a>
-      </nav>
-    <div class="card">
-      <img src="images/me.png" alt="hello" />
-       <h1> Hi i'm <span class="highlight">JohnL</span></h1>
-       <p> Student Web developer</p>
+    <div id="AboutMe"  class="AboutMe">
+        <div class="Info">
+        <h1 class="Hover-Effect1">About Me</h1>
+        <br><br>
+        <h2>Hi, i'm <br>Johnlawrence F. Maula</h2>
+        <br>
+        <p>I want to be a web developer, which is why I'm learning and practicing html, CSS, and JS.
+            <br>
+            I am currently a grade 11 ICT student at the Aics Meycauayan branch       
+        </p>
+        <p>When I'm bored or have free time, I like to play online games.</p>
+
+        <img class="CodeBG" src="CodeBG.png" alt="">
+        </div>
+
+        <div class="Question">
+            <p>Do you also enjoy gaming?</p>
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+            <button id="no">I don't play games</button>
+        </div>
+
+        <div class="Infos">
+           <div class="btns">
+            <h1 onclick="ShowSkills()" class="Skills-btn Hover-Effect1">Skills</h1>
+            <h1 onclick="ShowEducation()" class="Education-btn 1">Education</h1>
+            <h1 onclick="ShowExperience()" class="Experience-btn ">Experience</h1>
+        </div>
+            <div class="Skills">
+                <ul>
+                    <li><h3>Web Dev</h3><p>- Makng Websites</p></li>
+                    <li><h3>Video Editing</h3><p>- Editing videos for school projects or Social Media contents</p></li>
+                    <li><h3>Photo Editing</h3><p>- Making logos/Backgrounds for Business/Website</p></li>
+                </ul>
+                <img src="Skills.png" alt="">
+            </div>
+            <div class="Education">
+                <ul>
+                    <li><h3>Elementary</h3><p>Bancal Integrated School <br> 2012-2018 </p></li>
+                    <li><h3>Junior HighSchool</h3><p>Bancal Integrated School <br> 2018-2022 </p></li>
+                    <li><h3>Senior HighSchool</h3><p>Asian Institute of Computer Studies <br> 2022-Present </p></li>
+                </ul>
+                <img src="Education.png" alt="">
+            </div>
+            <div class="Experience">
+                <ul>
+                   <li><h3>Wala</h3><p>Kase bai na bai</p></li>
+                </ul>
+                <img src="Experience.png" alt="">
+            </div>
+        </div>
     </div>
-  </div>
-  
-  <div class="distance">
-     <div id="about" class="wala">about</div>
-    <div class="about">
-      <h1 class="title">About <span class="highlight">Me</span></h1>
-      <h1 class="title2">WHO AM I?</h1>
-      <h2 class="name"> <span class="highlight">Hi, i'm</span><br>Johnlawrence F. Maula</h2>
-      <h3 class="desc"> A student web Developer</h3>
-      <p class="des"> I'm still learning about web developing and programming. I'm currently in grade 11 right now. <br>The Language i know is <span class="highlight">Java</span> and <span class="highlight">javascript</span>.</p>
+    <div id="ContactMe" class="ContactMe">
+        <h1>Where can you Contact me?</h1>
+        <br>
+        <div><i class="fa-brands fa-square-facebook Icon"></i><a href="https://www.facebook.com/JohnL.Maula/?viewas=&should_open_composer=false&show_switched_toast=false&show_invite_to_follow=false&show_switched_tooltip=false&show_podcast_settings=false&show_community_review_changes=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true"  target="_blank"><p>Johnlawrence Flores Maula</p></a></div>
+        <div><i class="fa-solid fa-envelope Icon"></i><p>maulajohnlawrence07@Gmail.com</p></div>
+        <div><i class="fa-solid fa-phone Icon"></i><p>09951388526</p></div>
     </div>
-  
-    <div class="aboutbody">
-      <div class="skills">
-        <h3>Skills</h3>
-        <ul>
-          <li>Web developer</li>
-          <li>Javascript</li>
-          <li>Java</li>
-          <li>Video editing</li>
-        </ul>
-      </div>
-      <div class="line"></div>
-      <div class="hobbies">
-        <h3>Hobbies</h3>
-        <ul>
-          <li>Gaming</li>
-          <li>Tiktok</li>
-          <li>Youtube</li>
-          <li>Coding</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-   <div id="project" class="wala">top</div>
-  <div class="myProjects" class="distance">
-    <h1 class="title"><span class="highlight">My</span> Projects</h1>
-    <div class="gallery">
-  <div class="proj"> 
-  <img src="images/project1.png" class="imgproj">
-  <h1 class="projtitle">Project 1 <br>
-  <span class="text">This is my first project in CP111</span>
-  </h1>
-  </div>
- 
-  <div class="proj"> 
-  <img src="images/project2.png" class="imgproj">
-  <h1 class="projtitle">Project 2 <br>
-  <span class="text">this is my project in java</span></h1>
-  </div>
-  
-  <div class="proj"> 
-  <img src="images/project3.png" class="imgproj">
-  <h1 class="projtitle">Project 3 <br>
-  <span class="text">bible verse activity</span></h1>
-  </div>
-  
-  <div class="proj"> 
-  <img src="images/project4.png" class="imgproj">
-  <h1 class="projtitle">Project 4 <br>
-  <span class="text">This activity is for calculating your monthly water bill </span></h1>
-  </div>  
-  
-  <div class="proj"> 
-  <img src="images/project5.png" class="imgproj">
-  <h1 class="projtitle">Project 5 <br>
-  <span class="text">This activity is for calculating your payslip as a student</span></h1>
-  </div> 
-  
-</div>
-</div>
-    
-  <div class="btt">
-  <a href="#top" class="">&uarr;</a>
-  </div>
-  
-  <script type="text/javascript" src="app.js"></script>
+
+    <footer> 
+        <p>"Failure" is not the opposite of success it's part of success </p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/e2e4c933da.js" crossorigin="anonymous"></script>
 </body>
 </html>
