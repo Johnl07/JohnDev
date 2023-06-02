@@ -251,6 +251,12 @@ Responsive
 **********************************************************/
 @media only screen and (max-width: 600px){
 
+    h1,h2,h3{
+        font-size: 16px;
+    }
+    h4,h5{
+        font-size: 14px;
+    }
     p{
         font-size: 10px;
     }
@@ -326,7 +332,7 @@ Responsive
     }
 
     .sticky + .AboutMe,.sticky + .AboutMe .CodeBG{
-        padding: 0;
+        padding-top: 70px;
     }
 
     .Main-Body{
