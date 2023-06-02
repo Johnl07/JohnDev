@@ -71,8 +71,10 @@ button{
     padding: 10px 16px;
     z-index: 100;
 }
-.Burger-Menu ul li{
+.Burger-Menu{
     display: none;
+}
+.Burger-Menu ul li{
     width: 30px;
     height: 5px;
     margin: 5px;
@@ -84,27 +86,26 @@ button{
     top: 0;
     width: 97.56%;
   }
-.Header .Menu-Button{
-    width: 40%;
-}
 .Header .Menu-Button ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 40px;
     list-style-type: none;
 }
 .Header .Logo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50px ;
+    width: 50px;
 }
 .Header .Logo img{
     height: 65px;
-    margin: 5px;
 }
 .Header .Logo span{
     color: white;
+}
+.Header .fa-solid{
+    display: none;
 }
 .Main-Body{
     background: url('Logo.png') no-repeat;
@@ -183,6 +184,7 @@ button{
     justify-content: space-between;
     height: 300px;
     width: 90%;
+    background-size: 300px;
     transition: .3s ease-in;
 }
 .Education{
@@ -192,6 +194,7 @@ button{
     justify-content: space-between;
     height: 300px;
     width: 90%;
+    background-size: 300px;
     transition: .3s ease-in;
 }
 .Experience{
@@ -201,6 +204,7 @@ button{
     justify-content: space-between;
     height: 300px;
     width: 90%;
+    background-size: 300px;
     transition: .3s ease-in;
 }
 .Infos h1{
@@ -247,12 +251,6 @@ Responsive
 **********************************************************/
 @media only screen and (max-width: 600px){
 
-    h1,h2,h3{
-        font-size: 16px;
-    }
-    h4,h5{
-        font-size: 14px;
-    }
     p{
         font-size: 10px;
     }
@@ -268,14 +266,13 @@ Responsive
         background: transparent;
         cursor: pointer;
     }
-    .Hover-Effect1::after{
-        left: 0;
-    }
 
     .Header{
         height: 35px;
-        width: 300px;
+        width: 100%;
         display: flex;
+        padding: 10px 0;
+
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -321,6 +318,12 @@ Responsive
         height: 40px;
         margin: 5px;
     }
+    .Burger-Menu{
+        display: block;
+    }
+    .Menu-Button .fa-solid{
+        display: block;
+    }
 
     .sticky + .AboutMe,.sticky + .AboutMe .CodeBG{
         padding: 0;
@@ -333,8 +336,6 @@ Responsive
         justify-content: space-between;
         align-items: center;
         margin-top: 20px;
-        width: 300px;
-        padding: 30px 10px;
     }
     .Main-Body .Card{
         margin: 20px 0;
@@ -343,10 +344,9 @@ Responsive
     .AboutMe{
         display: flex;
         flex-direction: column;
-        margin: 15px;
-        padding: 20px;
+        margin: 0;
+        padding: 20px 0;
         padding-top: 70px;
-        width: 300px;
     }
     .AboutMe h1{
         display: inline-block;
@@ -365,24 +365,20 @@ Responsive
     }
     .AboutMe .Infos .btns{
         display: flex;
-        justify-content: space-evenly;
     }
     .AboutMe .Infos .btns h1{
-        font-size: 12px;
+        font-size: 16px;
     }
+
     .Skills img,.Education img,.Experience img{
         position: absolute;
+        width: 250px;
         z-index: -1;
-        height: 300px;
         filter: blur(5px);
     }
 
-    .ContactMe{
-        width: 300px;
-    }
-
     footer{
-        width: 300px;
+        width: auto;
     }
 
 }
