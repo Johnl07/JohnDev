@@ -345,7 +345,7 @@ Responsive
         display: flex;
         flex-direction: column;
         margin: 0;
-        padding: 20px 0;
+        padding: 20px;
         padding-top: 70px;
     }
     .AboutMe h1{
