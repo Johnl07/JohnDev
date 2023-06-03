@@ -49,11 +49,9 @@ function ShowExperience(){
   ExperienceBtn.classList.add("Hover-Effect1");
 }
 
-var Menu = document.getElementById('Menu-Button');
-
-function ShowMenu(){
-  Menu.style.left = "0px";
+function Yes(){
+  alert('Add me mah bro')
 }
-function UnshowMenu(){
-  Menu.style.left = "-200px";
+function No(){
+  alert('bai n bai')
 }
