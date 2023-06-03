@@ -116,7 +116,7 @@ button{
     display: none;
 }
 .Main-Body{
-    background: url('Logo.png') no-repeat;
+    background: url('images/Logo.png') no-repeat;
     background-position:28%;
     padding: 10%;
     display: flex;
