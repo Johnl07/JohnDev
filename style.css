@@ -297,46 +297,24 @@ Responsive
         position: absolute;
         top: 0;
     }
-    .Header .Burger-Menu ul li{
-        display: block;
-    }
-    .Header .Menu-Button ul{
-        height: 700px;
-        width: 120px;
-        display: block;
-        position: absolute;
-        left: -200px;
-        top: 0;
-        padding: 20px;
-        background-color: var(--main-color);
-    }
-    .Header .Menu-Button ul li{
-        margin: 10px 0;
-    }
-    .Header .Menu-Button .fa-solid{
-        width: 100%;
-        color: var(--secondary-color);
-        font-size: 25px;
-        margin-left: 100px;
-    }
-    .Header .Menu-Button .fa-solid:hover{
-        color: white;
-    }
     .Header .Logo{
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 50px ;
+        margin:0 auto 0 10px;
     }
     .Header .Logo img{
         height: 40px;
         margin: 5px;
     }
-    .Burger-Menu{
-        display: block;
+    .Header .Menu-Button{
+        margin: auto;
     }
-    .Menu-Button .fa-solid{
-        display: block;
+    .Header .Menu-Button li h3{
+        font-size: 12px;
+    }
+    .Header .Menu-Button li:nth-child(1){
+        display: none;
     }
 
     .sticky + .AboutMe,.sticky + .AboutMe .CodeBG{
@@ -393,6 +371,7 @@ Responsive
 
     footer{
         width: auto;
+        height: 40px;
     }
 
 }
