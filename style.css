@@ -42,14 +42,36 @@ ul{
     list-style-type: none;
 }
 button{
+    position: relative;
     margin: 5px;
     font-weight: 500;
     padding: 5px;
     color: var(--secondary-color);
     border: 2px solid  var(--secondary-color);
     border-radius: 15px;
-    background: transparent;
+    background: var(--main-color);
     cursor: pointer;
+    z-index: 5;
+    transition: .5s ease-in-out;
+}
+button:hover{
+    color: var(--main-color);
+}
+button::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    z-index: -1;
+    transition: .5s ease-in-out;
+}
+button:hover::after{
+    left: 0;
+    width: 100%;
 }
 .Hover-Effect1::after{
     content: "";
@@ -153,6 +175,20 @@ button{
     display: inline-block;
     position: relative;
 }
+.Main-Body .Song-Section{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+.Main-Body .Song-Section img{
+    height: 50px;
+    border-radius: 5px;
+}
 .AboutMe{
     position: relative;
     margin: 40px;
@@ -237,7 +273,7 @@ button{
     align-items: center;
     margin: 5px;
 }
-.ContactMe div .Icon{
+.Icon{
     color: var(--secondary-color);
     margin-right: 10px;
 }
