@@ -55,3 +55,18 @@ function Yes(){
 function No(){
   alert('bai n bai')
 }
+
+var Song = document.getElementById('Song');
+var PlayPause = document.getElementById('PlayPause');
+
+function PlayPause1(){
+    if(PlayPause.classList.contains('fa-play')){
+        PlayPause.classList.remove('fa-play')
+        PlayPause.classList.add('fa-pause')
+        Song.play()
+    }else{
+        PlayPause.classList.add('fa-play')
+        PlayPause.classList.remove('fa-pause')
+        Song.pause();
+    }
+}
